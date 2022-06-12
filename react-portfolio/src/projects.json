@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "name": "Movies Now",
+        "image": "",
+        "github": "https://github.com/mccrown/Movies-Now",
+        "deployedapp": "https://mccrown.github.io/Movies-Now/",
+        "description": "A website that allows you to search for available movies to watch on different streaming service using a genre preference filter.",
+        "skills": "Javascript | HTML | CSS | API "
+        },
+      {
+      "id": 2,
+      "name": "Note Taker",
+      "image": "",
+      "github": "https://github.com/mccrown/note-taker",
+      "deployedapp": "https://conner-note-taker.herokuapp.com/",
+      "description": "This note taking app allows you to create, save and delete notes in plain text.",
+      "skills": "HTML | CSS | JavaScript | ExpressJS "
+      },
+      {
+      "id": 3,
+      "name": "Weather Dashboard",
+      "image": "",
+      "github": "https://github.com/mccrown/weather-dashboard",
+      "deployedapp": "https://mccrown.github.io/weather-dashboard/",
+      "description": "This is a weather dashboard app that allows you to view the weather and forecast for a user entered city",
+      "skills": "Javascript | HTML | CSS | API "
+      },
+      {
+      "id": 4,
+      "name": "Budget Tracker",
+      "image": "",
+      "github": "https://github.com/mccrown/Budget-Tracker",
+      "deployedapp": "https://protected-everglades-33635.herokuapp.com/",
+      "description": "This project is an application that allows users to add expenses and deposits to their budget with or without internet connection.",
+      "skills": "IndexDB | Service Workers | Web Manifest"
+      },
+      {
+        "id": 1,
+        "name": "Team Profile Generator",
+        "image": "",
+        "github": "https://github.com/mccrown/team-profile-generator",
+        "deployedapp": "https://mccrown.github.io/team-profile-generator/",
+        "description": "An application to provide numbers of confirmed cases, active cases, recovered cases, and deaths tolls due to COVID-19.",
+        "skills": "Javascript | node.js "
+      },
+      {
+      "id": 6,
+      "name": "Work Day Scheduler",
+      "image": "",
+      "github": "https://github.com/mccrown/workday-scheduler",
+      "deployedapp": "https://mccrown.github.io/workday-scheduler/",
+      "description": "This application uses third-party API and JavaScript to create a calendar-style scheduler allowing users to save events for each hour of the day.",
+      "skills": "JavaScript | jQuery | API | DOM"
+      }
+  ]
