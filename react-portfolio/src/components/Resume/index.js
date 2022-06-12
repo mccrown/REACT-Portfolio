@@ -10,6 +10,9 @@ function Resume() {
                 <Col lg={8} md={12}>
                     Full Stack Web Developer who possesses technical skills within the MERN stack. Always continuously learning and trying to do better.
                 </Col>
+                <Col lg={8} md={12}>
+            <a href={Resume} download><img src="https://img.icons8.com/doodle/120/000000/pdf-2.png" alt="resume" /></a><p class="icon-text">resume</p>
+            </Col>
             </Row>
         </div>
 

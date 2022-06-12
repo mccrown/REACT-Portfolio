@@ -1,44 +1,50 @@
 import React, { useState } from 'react';
-//import { validateEmail } from '../../utils/helper';
+import { validateEmail } from '../../utils/helpers';
 import { Row, Col } from 'react-bootstrap'; 
 import Resume from '../../assets/Conner McCown Resume.pdf'
 
  function ContactForm() {
-//     // manage form data, empty out the initialize values
-//     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
-//     // deconstructing the formState object into it's named properties
-//     const { name, email, message } = formState;
-//     // error message
-//     const [errorMessage, setErrorMessage] = useState('');
+    const [formState, setFormState] =useState({name: '', email: '', message: ''})
+    const [errorMessage, setErrorMessage] = useState('')
 
-//     function handleChange(e) {
-//         if (e.target.name === 'email') {
-//             const isValid = validateEmail(e.target.value);
+
+    const handleChange =(e) => {
+        const {target} = e
+        const inputType = target.name
+        const inputValue = target.value
     
-//                 if(!isValid) {
-//                     setErrorMessage('Your email is invalid');
-//                 } else {
-//                     setErrorMessage('');
-//                 }
-//             // checking if name and message has input 
-//             } else {
-//                 if (!e.target.value.length) {
-//                   setErrorMessage(`${e.target.name} is required.`);
-//                 } else {
-//                   setErrorMessage('');
-//                 } 
-//         }
-//         // setFormState is updating formState for the property
-//         if (!errorMessage) {
-//         setFormState({...formState, [e.target.name]: e.target.value })
-//         }
-//     }
+      
+        if (!e.target.value.length) {
+            setErrorMessage(`${e.target.name} is required.`);
+          } else {
+            setErrorMessage('');
+          }
+        if (!errorMessage) {
+          setFormState({ ...formState, [e.target.name]: e.target.value });
+          console.log('Handle Form', formState);
+        }
+      };
 
-//     // form submit 
-//     function handleSubmit(e) {
-//         e.preventDefault();
-  
-//     }
+      const handleSubmit = (e) => {
+        e.preventDefault();
+        if (!validateEmail(formState.email)) {
+            setErrorMessage('Email is invalid');
+            return;
+        }
+        if(!formState.name.length) {
+            setErrorMessage('name required')
+            return
+        } 
+        
+         if(!formState.message.length) {
+            setErrorMessage('message required')
+            return
+         }
+
+        alert('Form Submitted')
+        setFormState({name: '', email: '', message: ''})
+       
+    }
 
 return (
     <section>
@@ -64,76 +70,27 @@ return (
         </Row>
         </div>
 
-        <div class="resume-container">
-            <Row>
-                <Col lg={4} md={12}>
-                <h2 class="resume">font-end technologies</h2>
-                <ul>
-                    <li>
-                        HTML
-                    </li>
-                    <li>
-                        CSS
-                    </li>
-                    <li>
-                        JavaScript
-                    </li>
-                    <li>
-                        jQuery
-                    </li>
-                    <li>
-                        React.js
-                    </li>
-                    <li>
-                        Framework (Bootstrap, Materalize)
-                    </li>
-                    <li>
-                        UI/UX Design
-                    </li>
-                    <li>
-                        Responsive Web Design
-                    </li>
-                </ul>
-                </Col>
-        
-            <Col lg={4} md={12}>
-            <h2 class="resume">back-end technologies</h2>
-                <ul>
-                    <li>
-                        Node.js
-                    </li>
-                    <li>
-                        Express.js
-                    </li>
-                    <li>
-                        MySQL (mysql lite3, mysql2)
-                    </li>
-                    <li>
-                        NoSQL (MongoDB, Mongoose)
-                    </li>
-                    <li>
-                        API's (web, third-party, RESTful, server-side)
-                    </li>
-                    <li>
-                        Templating language (Handlebars)
-                    </li>
-                </ul>
-            </Col>
+        <form id="contact-form" onSubmit={handleSubmit}>
+            <div class="text-[20px] m-5 px-5">
+                <label class="p-4 text-white" htmlFor="name">Name:</label>
+                <br /> <input type="text" value={formState.name} onChange={handleChange} name="name"/>
+            </div>
+            <div class="text-[20px]  m-5 px-6">
+                <label class="p-4 text-white" htmlFor='email'>Email:</label>
+                <br /><input type="email" name="email" value={formState.email} onChange={handleChange}/>
+            </div>
+            <div class="text-[20px]  m-5 px-3">
+                <label class="p-6 text-white"htmlFor="message">Message:</label>
+                <br /><textarea class="p-5 ml-3"name="message" rows="5" value={formState.message} onChange={handleChange}/>
 
-        <Col lg={4} md={12}>
-        <h2 class="education">my education</h2>
-        <p>
-          <span className="school-name">UofU</span><br></br>
-          Full Stack Boot Camp - Certification 
-          <br></br>
-          <br></br>
-          <span className="school-name">Salt Lake Community College</span><br></br>
-          <br></br>
-          <br></br>
-        </p>
-        </Col>
-        </Row>
-        </div>
+            </div>
+            {errorMessage && (
+                <div>
+                    <p className= "error-text">{errorMessage}</p>
+                </div>
+            )}
+            <button class="text-[20px] text-white  mx-10 mb-2" type ="submit">Submit</button>
+            </form>
 
     </section>
     );
@@ -152,7 +109,7 @@ export default ContactForm;
     //             <label htmlFor="email">Email address:</label>
     //             <input type="email" class="form-control" defaultValue={email} onBlur={handleChange} name="email" />
     //         </div>
-            {/* <div class="col-12">
+        {/* <div class="col-12">
                 <label htmlFor="message">Message:</label>
                 <textarea name="message" class="form-control" defaultValue={message} onBlur={handleChange} rows="7" />
             </div> 
@@ -166,4 +123,4 @@ export default ContactForm;
             <button data-testid='button' class="btn btn-outline-dark" type="submit" onSubmit={handleSubmit}>Submit</button>
             </div>
         </form>
-    </section> */}
+            </section> */}
