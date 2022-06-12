@@ -11,3 +11,244 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+*  {
+  background: #ffd6e0;
+  font-family: 'Shadows Into Light', cursive;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+p {
+  font-size: 22px;
+  color: #eb4f16;
+  font-weight: bold;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+h1 {
+  margin: auto 30px; 
+  padding: 10px;
+  color: #1fa8c7;
+  font-weight: bold;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+
+#myImage {
+  margin: auto 70px;
+}
+
+#about-container, #image-container, .education-container {
+  margin: 0px 10px;
+}
+
+.key-title, .resume, .name, .title, .contact, .education {
+  font-weight: bold;
+  color: #1fa8c7;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+.name {
+  font-size: 4rem;
+  color: #1fa8c7;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  letter-spacing: 20px;
+}
+
+.job {
+  font-size: 2rem;
+  color: #1fa8c7;
+  display: flex;
+  justify-content: center;
+  align-content: center;       
+}
+
+.school-name {
+  font-weight: bolder;
+  color:#788b85
+}
+
+.card {
+  background-color: white;
+  border-radius: 2px;
+  height: 525px;
+  margin: 1rem;
+  position: relative;
+  width: 325px;
+  box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+  text-align: left;
+}
+
+.card > .img-container {
+  height: 50%;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 10px;
+  background-color: white;
+}
+.card > .img-container > img {
+  width: 100%;
+  padding: 25px;
+  background-color: white;
+}
+
+.card > .content {
+  padding-right: 1rem;
+  font-size: 18px;
+  background-color: white;
+  color: #eb4f16;
+  font-weight: bold;
+}
+
+.card > .content > ul {
+  list-style-type: none;
+  background-color: white;
+}
+
+.card > .content > ul > li {
+  margin-top: 18px;
+  background-color: white;
+}
+
+.wrapper {
+  padding-top: 50px;
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 20px;
+  justify-content: space-around;
+  align-content: flex-start;
+  overflow: auto;
+}
+
+/* #footer {
+  margin: auto 700px;
+  padding: 5px;
+} */
+
+.icon {
+  padding: 10px;
+}
+
+.nav {
+  justify-content: flex-end;
+  font-size: 24px;
+}
+
+#port-icon {
+  background-color: white;
+  margin: 0px 20px;
+}
+
+.project-title {
+  background-color: white;
+  font-weight: bold;
+  font-family: 'Shadows Into Light', cursive;
+
+}
+
+.project-description {
+  background-color: white;
+  font-weight: normal;
+  color: #1fa8c7;
+}
+
+.project-icons {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+#contact-form {
+  margin: 15px 500px;
+  font-size: 18px;
+  color: #eb4f16;
+  font-weight: bold;
+}
+
+.contact-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.resume-container {
+  margin: 20px 50px;
+  color: #eb4f16;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-size: 22px;
+}
+
+.nav-link, .link, .btn {
+  color: #1fa8c7;
+  font-weight: bold;
+}
+
+.nav-link:hover, .link:hover {
+  color: #eb4f16;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.active {
+  color: #eb4f16;
+}
+
+.banner {
+  width: 100%;
+}
+
+.my-image {
+  border-radius: 50%;
+  padding: 50px 50px;
+}
+
+.contact-container {
+  margin: 100px;
+  justify-content: center;
+}
+
+@media screen and (max-width: 767px) { 
+  p, .resume-container {
+    font-size: 20px;
+  }
+
+  .education, .resume {
+    font-size: 24px;
+  }
+
+  .image {
+    width: 200%;
+    height: 100%;
+  }
+
+  .name {
+    font-size: 35px;
+    color: #1fa8c7;
+    letter-spacing: normal;
+  }
+  
+  .job {
+    font-size: 30px;
+    color: #1fa8c7;
+  }
+
+  .nav {
+    justify-content: flex-end;
+    font-size: 22px;
+  }
+
+  .contact-icons, .icon-text {
+    margin: auto 50%; 
+  }
+  
+}

@@ -1,6 +1,6 @@
 import React from 'react'; 
 // import images from assets
-import myImage from '../../assets/images/myimage.jpeg';
+import myImage from '../../assets/myimage.jpg';
 
 import { Col } from 'react-bootstrap';
 
@@ -14,7 +14,7 @@ function About() {
       <center><img src={myImage} className="my-image" alt="Conner-profile"/></center>
       <p class="name">Conner McCown</p>
       <p class="job">Full Stack Web Developer</p>
-      <h2 class="education">a little about me</h2>
+      <h2 class="education">About me</h2>
         <p>
         lorem ipsum
 

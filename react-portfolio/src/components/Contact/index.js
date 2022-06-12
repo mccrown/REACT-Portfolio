@@ -1,44 +1,44 @@
 import React, { useState } from 'react';
-import { validateEmail } from '../../utils/helper';
+//import { validateEmail } from '../../utils/helper';
 import { Row, Col } from 'react-bootstrap'; 
-import Resume from '../../assets/images/Nicole Wallace - Resume (August 2020).pdf'
+import Resume from '../../assets/Conner McCown Resume.pdf'
 
-function ContactForm() {
-    // // manage form data, empty out the initialize values
-    // const [formState, setFormState] = useState({ name: '', email: '', message: '' });
-    // // deconstructing the formState object into it's named properties
-    // const { name, email, message } = formState;
-    // // error message
-    // const [errorMessage, setErrorMessage] = useState('');
+ function ContactForm() {
+//     // manage form data, empty out the initialize values
+//     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
+//     // deconstructing the formState object into it's named properties
+//     const { name, email, message } = formState;
+//     // error message
+//     const [errorMessage, setErrorMessage] = useState('');
 
-    // function handleChange(e) {
-    //     if (e.target.name === 'email') {
-    //         const isValid = validateEmail(e.target.value);
+//     function handleChange(e) {
+//         if (e.target.name === 'email') {
+//             const isValid = validateEmail(e.target.value);
     
-    //             if(!isValid) {
-    //                 setErrorMessage('Your email is invalid');
-    //             } else {
-    //                 setErrorMessage('');
-    //             }
-    //         // checking if name and message has input 
-    //         } else {
-    //             if (!e.target.value.length) {
-    //               setErrorMessage(`${e.target.name} is required.`);
-    //             } else {
-    //               setErrorMessage('');
-    //             } 
-    //     }
-    //     // setFormState is updating formState for the property
-    //     if (!errorMessage) {
-    //     setFormState({...formState, [e.target.name]: e.target.value })
-    //     }
-    // }
+//                 if(!isValid) {
+//                     setErrorMessage('Your email is invalid');
+//                 } else {
+//                     setErrorMessage('');
+//                 }
+//             // checking if name and message has input 
+//             } else {
+//                 if (!e.target.value.length) {
+//                   setErrorMessage(`${e.target.name} is required.`);
+//                 } else {
+//                   setErrorMessage('');
+//                 } 
+//         }
+//         // setFormState is updating formState for the property
+//         if (!errorMessage) {
+//         setFormState({...formState, [e.target.name]: e.target.value })
+//         }
+//     }
 
-    // // form submit 
-    // function handleSubmit(e) {
-    //     e.preventDefault();
+//     // form submit 
+//     function handleSubmit(e) {
+//         e.preventDefault();
   
-    // }
+//     }
 
 return (
     <section>
@@ -123,19 +123,13 @@ return (
         <Col lg={4} md={12}>
         <h2 class="education">my education</h2>
         <p>
-          <span className="school-name">UC BERKELEY EXTENSION</span><br></br>
+          <span className="school-name">UofU</span><br></br>
           Full Stack Boot Camp - Certification 
           <br></br>
           <br></br>
-          <span className="school-name">SAN FRANCISCO STATE UNIVERSITY</span><br></br>
-          Business Admin & Management - BS
+          <span className="school-name">Salt Lake Community College</span><br></br>
           <br></br>
           <br></br>
-          <span className="school-name">LOS MEDANOS COLLEGE</span><br></br>
-          Liberal Arts: Arts & Humanities - AA<br></br>
-          Liberal Arts: Math & Science - AS<br></br>
-          Liberal Arts: Biological & Social Science - AA<br></br>
-          Business Administration - AS
         </p>
         </Col>
         </Row>
