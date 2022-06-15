@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.6e310b25.css",
+    "main.js": "/react-portfolio/static/js/main.e6d9148c.js",
+    "static/media/myimage.jpg": "/react-portfolio/static/media/myimage.23b80003d2a69b6d45b2.jpg",
+    "static/media/Conner McCown Resume.pdf": "/react-portfolio/static/media/Conner McCown Resume.036b862496a3975063f4.pdf",
+    "index.html": "/react-portfolio/index.html",
+    "main.6e310b25.css.map": "/react-portfolio/static/css/main.6e310b25.css.map",
+    "main.e6d9148c.js.map": "/react-portfolio/static/js/main.e6d9148c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6e310b25.css",
+    "static/js/main.e6d9148c.js"
+  ]
+}
