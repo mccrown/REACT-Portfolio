@@ -27,7 +27,7 @@
   This application is covered by the MIT license.  
 
   ## Link
-  https://mccrown.github.io/react-portfolio/#about
+  https://mccrown.github.io/react-portfolio
 
   ## Preview
   ![2022-06-16 10_03_58-Window](https://user-images.githubusercontent.com/6404921/174115525-8cd16974-3f38-481a-8196-68fa2ef00cf4.jpg)
