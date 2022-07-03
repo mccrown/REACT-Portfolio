@@ -28,12 +28,12 @@
       },
       {
       "id": 4,
-      "name": "Budget Tracker",
-      "image": "https://user-images.githubusercontent.com/6404921/171944547-417f330c-e6b6-4955-9f47-87cef670a755.jpg",
-      "github": "https://github.com/mccrown/Budget-Tracker",
-      "deployedapp": "https://protected-everglades-33635.herokuapp.com/",
-      "description": "This project is an application that allows users to add expenses and deposits to their budget with or without internet connection.",
-      "skills": "IndexDB | Service Workers | Web Manifest"
+      "name": "Birdr",
+      "image": "https://user-images.githubusercontent.com/6404921/177059912-fd782fba-f406-4d48-94a8-3bbdcb4c9980.jpg",
+      "github": "https://github.com/Rbodil/Birdor",
+      "deployedapp": "https://safe-everglades-20797.herokuapp.com/",
+      "description": "",
+      "skills": "MERN Stack Application"
       },
       {
         "id": 5,
